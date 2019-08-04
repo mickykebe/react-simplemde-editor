@@ -139,6 +139,7 @@ export default class SimpleMDEEditor extends React.PureComponent<
       this.editorToolbarEl &&
         this.editorToolbarEl.addEventListener("click", this.eventWrapper);
 
+      console.log(this.simpleMde);
       this.simpleMde.codemirror.on("cursorActivity", this.getCursor);
 
       const { events } = this.props;
